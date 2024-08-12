@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<X3D profile="Interchange" version="3.3" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance">
+  <head>
+    <meta name="title" content="Fanta Bottle"/>
+    <meta name="creator" content="Bo"/>
+    <meta name="description" content="A near-realistic Fanta bottle model in X3D"/>
+    <meta name="generator" content="Modelling"/>
+  </head>
+  <Scene>
+    <Viewpoint position="0 0 6" description="Default View"></Viewpoint>
+
+    <!-- Bottle Bottom -->
+    <Transform translation="0 -1.75 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="1 0.5 0" transparency="0.1"></Material>
+        </Appearance>
+        <Cylinder height="0.5" radius="0.7"></Cylinder>
+      </Shape>
+    </Transform>
+
+    <!-- Bottle Body -->
+    <Transform translation="0 0 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="1 0.5 0" transparency="0.1"></Material>
+          <ImageTexture url="fanta_logo.png"></ImageTexture>
+        </Appearance>
+        <Cylinder height="3" radius="0.7"></Cylinder>
+      </Shape>
+    </Transform>
+
+    <!-- Bottle Neck -->
+    <Transform translation="0 1.5 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="1 0.5 0" transparency="0.1"></Material>
+        </Appearance>
+        <Cylinder height="0.5" radius="0.4"></Cylinder>
+      </Shape>
+    </Transform>
+
+    <!-- Bottle Cap -->
+    <Transform translation="0 1.75 0">
+      <Shape>
+        <Appearance>
+          <Material>
+            <ImageTexture url="fanta_cap.jpeg"></ImageTexture>
+          </Material>
+        </Appearance>
+        <Cylinder height="0.2" radius="0.45"></Cylinder>
+      </Shape>
+    </Transform>
+
+    <!-- Bottle Detailing - Top Curved Part -->
+    <Transform translation="0 1.25 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="1 0.5 0" transparency="0.1"></Material>
+        </Appearance>
+        <Sphere radius="0.4"></Sphere>
+      </Shape>
+    </Transform>
+
+    <!-- Bottle Detailing - Bottom Curved Part -->
+    <Transform translation="0 -1.25 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="1 0.5 0" transparency="0.1"></Material>
+        </Appearance>
+        <Sphere radius="0.7"></Sphere>
+      </Shape>
+    </Transform>
+
+    <!-- Label -->
+    <Transform translation="0 0.25 0">
+      <Shape>
+        <Appearance>
+          <Material diffuseColor="1 1 1"></Material>
+          <ImageTexture url="fanta_body.jpeg"></ImageTexture>
+        </Appearance>
+        <Box size="1.4 0.5 0.01"></Box>
+      </Shape>
+    </Transform>
+
+  </Scene>
+</X3D>
